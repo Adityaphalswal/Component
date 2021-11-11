@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit
+}
+
+:root {
+    --PRed: hsl(0, 100%, 74%) ;
+    --PGreen: hsl(154, 59%, 51%);
+    --ABlue: hsl(248, 32%, 49%);
+    --NDark_Blue: hsl(249, 10%, 26%) ;
+    --NGrayish_Blue: hsl(246, 25%, 77%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'poppins' ;
+    font-weight:400 ;
+    height: 100vh;
+    background:url("/images/bg-intro-desktop.png"), var(--PRed);
+    background-size: cover, contain;
+    color: black;
+    flex-direction:row;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+.container{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%,-50%);   
+}
+.left{
+    height: 100%;
+    width: 50%;
+    color: white;
+    padding: 5%;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    padding-top: 15%;
+}
+.left > h1{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+}
+.top{height: 10%;
+width: 100%;
+border-radius: 10px;
+background-color: var(--ABlue);
+margin-bottom: 5%;
+font-size: 1.5rem;
+font-weight: 500;
+color: var(--NGrayish_Blue);
+padding: 3% ;
+text-align:Center;
+box-shadow: 0 5px 0 var(--NGrayish_Blue);
+}
+span{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.form{
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5%;
+}
+form{
+    height: 90%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+#f{
+    height: 15%;
+    border-radius: 5px;
+    margin: 2%;
+    width: 96%;
+    border-color: var(--NGrayish_Blue);
+    padding-left: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#f:active{
+    border: 1px solid var(--ABlue)
+}
+button{
+    height: 17%;
+    width: 96%;
+    margin: 2%;
+    border-radius: .7rem;
+    background: var(--PGreen);
+    color: white;
+    font-size: 2rem;
+    font-weight:700;
+    text-transform: uppercase;
+    border: none;
+}
+.bottom{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--NGrayish_Blue);
+}
+a{
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    .container{
+        height: 90%;
+        width: 98%;
+    }
+    .left,.right{
+        width: 100%;
+    }
+    .left{
+        padding: 1%;
+        text-align: center;
+        height: 30%;
+    }
+    .right{
+        height: 70%;
+    }
+}
