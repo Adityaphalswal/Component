@@ -23,7 +23,7 @@ body {
     font-family:'poppins' ;
     font-weight:400 ;
     height: 100vh;
-    background:url("/images/bg-intro-desktop.png"), var(--PRed);
+    background:url("images/bg-intro-desktop.png"), var(--PRed);
     background-size: cover, contain;
     color: black;
     flex-direction:row;
